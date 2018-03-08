@@ -1,0 +1,67 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+	<title>Dainius spreadsheet</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.json">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#f9f9f9">
+</head>
+<body>
+	<div class="container">
+        <div class="row">
+            <a href="history.html">
+            <div id="indication" class="notification-icon col-sm-1">
+                
+                    <span class="glyphicon glyphicon-upload"></span>
+               
+                <span class="badge" id="indicationValue">0</span>
+                
+            </div>
+                </a>
+            <div id="regularAverage" class="information-icon col-md-2">
+                <span class="glyphicon glyphicon-repeat"></span>
+                <span class="badge" id="regularAverageValue">0</span>
+            </div>
+            <div id="onetimeAverage" class="information-icon col-md-2">
+                <span class="glyphicon glyphicon-resize-small"></span>
+                <span class="badge" id="onetimeAverageValue">0</span>
+            </div>
+            <div id="total" class="information-icon col-md-2">
+                <i class="glyphicon glyphicon-eur"></i>
+                <span class="badge" id="totalValue">0</span>
+            </div>
+            <div id="predicted" class="information-icon col-md-2">
+                <i class="glyphicon glyphicon-fast-forward"></i>
+                <span class="badge" id="predictedValue">0</span>
+            </div>
+        </div>
+		<form>
+			<input class="form-control margin input-lg" id="payment" placeholder="Mokestis" type="number" autocomplete="off">
+			<input class="form-control margin input-lg" id="comment" placeholder="Komentaras" type="text" autocomplete="off">
+			<div class="[ form-group ]" id="check">
+				<input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-default" autocomplete="off" />
+				<div class="[ btn-group ]">
+					<label id="checkLabel" for="fancy-checkbox-default" class="col-xs-4 [ btn btn-success ]">
+						<span class="[ glyphicon glyphicon-ok ]"></span>
+						<span> </span>
+					</label>
+					<label for="fancy-checkbox-default" class="col-xs-8 [ btn btn-default active ]">Vienkartinis</label>
+				</div>
+			</div>
+			<input readonly class="col-xs-12 col-md-3 btn btn-lg btn-success" value="Siųsti" onclick="sendData()">
+		</form>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="javascript.js"></script>
+</body>
+</html>

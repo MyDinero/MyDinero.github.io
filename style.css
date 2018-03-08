@@ -1,0 +1,81 @@
+.margin {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.form-group input[type="checkbox"] {
+    display: none;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span {
+    width: 20px;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+    display: none;
+}
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+    display: inline-block;   
+}
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+    display: inline-block;
+}
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+    display: none;   
+}
+
+#checkLabel{
+    height: 34px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.notification-icon {
+    
+    display: inline-block;
+    /*padding-right:0;*/
+}
+
+.information-icon {
+    /*margin-top: 250px;*/
+    display: inline-block;
+    /*padding-right:0;*/
+    //    margin-bottom: 20px;
+}
+
+.information-icon .glyphicon {
+    font-size: 30px;
+}
+
+.information-icon .badge {
+    font-size: 16px;
+    background-color: #4654;
+    margin-bottom: -35px;
+    margin-left: -45px;
+}
+
+.notification-icon .glyphicon {
+    font-size: 40px;
+}
+
+.notification-icon .badge {
+    font-size: 22px;
+    background-color: #730000;
+    margin-bottom: 60px;
+    margin-left: -12px;
+}
+
+#check{
+    margin-bottom: 30px;
+}
+
+a {
+    color: #333;
+     text-decoration: none !important;
+}
+a:visited {color:#333;}  /* visited link */
+a:hover {color:#333;}  /* mouse over link */
+a:active {color:#333;}
